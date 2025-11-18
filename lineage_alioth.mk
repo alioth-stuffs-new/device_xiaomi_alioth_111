@@ -28,3 +28,14 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=google/husky_beta/husky:16/BP41.250822.010/14082742:user/release-keys
+
+
+TARGET_OPTIMIZED_DEXOPT := true
+WITH_GMS := true
+TARGET_USES_OMNI_GAPPS := true
+TARGET_INCLUDE_PHOTOS := true
+LUNARIS_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
